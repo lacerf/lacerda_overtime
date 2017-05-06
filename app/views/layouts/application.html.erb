@@ -3,7 +3,7 @@
 <head>
   <title>Overtime</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true%>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -17,7 +17,7 @@
 	</div>
 </div>
 
-<%= js add_gritter(flash[:notice], title: "Overtime App Notification", sticky: false) %>
+<%= render 'shared/alerts' %>
 
 </body>
 </html>
